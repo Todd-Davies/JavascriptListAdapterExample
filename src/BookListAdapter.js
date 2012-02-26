@@ -92,7 +92,6 @@ function BookListAdapter() {
 	
 	/**
 	 * Prints the list
-	 * author: Todd Davies 2011
 	 */
 	this.printList = function() {
 		console.log("Redrawing list");
