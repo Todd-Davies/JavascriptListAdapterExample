@@ -1,0 +1,63 @@
+<html>
+<head>
+	<script type="text/javascript" src="Book.js"></script>
+	<script type="text/javascript" src="BookListItem.js"></script>
+	<script type="text/javascript" src="BookListAdapter.js"></script>
+	<script type="text/javascript" src="jquery-1.4.min.js"></script>
+	<script type="text/javascript" src="Control.js"></script>
+</head>
+
+<body onLoad="load()">
+
+<table border="0" style="height: 100%;width: 100%">
+	<tr>
+		<td colspan="2" style="background-color:#FFF; height: 50px">
+			<h1>The Book Keeper</h1>
+			Keeps a list of all the books you have read
+		</td>
+	</tr>
+
+	<tr valign="top">
+		<td style="background-color:#f2f2f2;width:400px;text-align:top;">
+				<h3>Add a book you've read</h3>
+				<table border="0" style="width: 100%">
+					<tr>
+						<td valign="top" style="line-height:150%">
+								Title:<br />
+								Author:<br />
+								Rating:<br />
+								Image URL:<br />
+								Description:<br />
+						</td>
+						<td>
+							<form id="frm_manage">
+								<input type="text" id="tb_title" /><br />
+								<input type="text" id="tb_author" /><br />
+								<select id="sel_rating">
+				  							<option	value="1">1</option>
+				  							<option value="2">2</option>
+				  							<option value="3">3</option>
+				  							<option value="4">4</option>
+				  							<option value="5">5</option>
+								</select><br />
+								<input type="text" name="duedate" id="tb_iURL"/><br />
+								<textarea rows="6" cols="16" style="resize:none" id="tb_description"></textarea><br />
+								<input type="button" name="btn_addBook" value="Add book" onclick="addBook()" />
+							</form>
+						</td>
+					</tr>
+			</table>
+		</td>
+		<td style="background-color:#FFF;text-align:top;">
+			<div id="list">An error has occurred</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" style="background-color:#FFF;text-align:center;height:30px"">
+		Todd Davies 2011</td>
+	</tr>
+</table>
+
+</body>
+</html>
