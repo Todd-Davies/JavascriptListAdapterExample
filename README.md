@@ -7,9 +7,9 @@ This mini app allows you to keep track of what books you've read, and what you t
 It stores user data in JSON format using local storage.
 
 This is intended to be a proof of concept project, not a serious one. Take a look at how the
-list items are generated, interfaced with the local storage and how they are manipulated in the   
-list.
+list items are generated, interfaced with the local storage and how they are manipulated in the list.
 
+Here is a sample list item:
 ![Sample Image](https://github.com/Todd-Davies/JavascriptListAdapterExample/raw/master/sample_item.png "An example list item implementation")
 
 A walkthrough will probably follow when I have time.
